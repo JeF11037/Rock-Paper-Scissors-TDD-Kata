@@ -45,4 +45,18 @@ public class ScissorsTests
 				Results.Win, 
 				opponent.Beats(player));
 	}
+	
+	@Test
+	public void ScissorsSameMoveResultsTest() 
+	{
+		player.Chooses(this.id);
+		opponent.Chooses(this.id);
+		
+		assertEquals(
+				"Given I have chosen "+this.id+"\r\n"
+				+ "When the opponent chooses "+this.id+"\r\n"
+				+ "Then it should be a draw\r\n",
+				Results.Draw, 
+				player.Beats(opponent));
+	}
 }
