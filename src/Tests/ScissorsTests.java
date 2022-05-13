@@ -42,8 +42,8 @@ public class ScissorsTests
 				"Given I have chosen "+this.advantageOver+"\r\n"
 				+ "When the opponent chooses "+this.id+"\r\n"
 				+ "Then they should win\r\n",
-				Results.Win, 
-				opponent.Beats(player));
+				Results.Lose, 
+				player.Beats(opponent));
 	}
 	
 	@Test
