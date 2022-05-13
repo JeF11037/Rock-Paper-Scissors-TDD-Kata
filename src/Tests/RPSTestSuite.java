@@ -7,6 +7,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({
 	RockTests.class,
-	ScissorsTests.class
+	ScissorsTests.class,
+	PaperTests.class
 	})
 public class RPSTestSuite {}
