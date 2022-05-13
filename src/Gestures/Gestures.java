@@ -9,7 +9,10 @@ public enum Gestures
 	Scissors;
 	
 	public Results Beats(Gestures gesture)
-	{		
+	{
+		if (this == gesture)
+			return Results.Draw;
+		
 		switch (this)
 		{
 			case Rock:
