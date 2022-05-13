@@ -8,7 +8,7 @@ public enum Gestures
 	Scissors;
 	
 	public Results Beats(Gestures gesture)
-	{	
+	{
 		switch (this)
 		{
 			case Rock:
