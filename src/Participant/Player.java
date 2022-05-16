@@ -7,6 +7,11 @@ public class Player implements Participant
 {
 	private Gestures gesture;
 	
+	public Player()
+	{
+		this.gesture = Gestures.Unknown;
+	}
+	
 	@Override
 	public void Chooses(Gestures gesture)
 	{

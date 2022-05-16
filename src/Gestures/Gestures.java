@@ -6,7 +6,8 @@ public enum Gestures
 {
 	Rock,
 	Paper,
-	Scissors;
+	Scissors,
+	Unknown;
 	
 	public Results Beats(Gestures gesture)
 	{
